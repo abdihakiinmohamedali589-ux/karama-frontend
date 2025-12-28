@@ -8,7 +8,7 @@ export interface ContactFormData {
 
 // Use proxy in development, or explicit URL in production
 const API_URL = import.meta.env.VITE_API_URL || 
-  (import.meta.env.DEV ? '' : 'https://karama-backend-y138.onrender.com/');
+  (import.meta.env.DEV ? '' : 'https://karama-backend-y138.onrender.com');
 
 export async function submitContactForm(data: ContactFormData) {
   try {
